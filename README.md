@@ -68,8 +68,8 @@
 
 ## 功能
 
-- [ ] Cloud mask with Landsat 8.
-- [ ] Cloud mask with Sentinel 2.
+- [x] RTSP 相机流数据采集
+- [ ] 基于棋盘格的相机标定
 
 ## 安装
 
@@ -118,7 +118,6 @@ See [CHANGELOG.md](/CHANGELOG.md)
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=psf&repo=black)](https://github.com/psf/black)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=uiri&repo=toml)](https://github.com/uiri/toml)
-
 
 ## 参考
 
