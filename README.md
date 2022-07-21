@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://pixelied.com/editor/design/62d95249afecc1406f2037a9"><img alt="logo" src="https://raw.githubusercontent.com/XavierJiezou/Camera-Calibration/main/images/favicon_256x256.ico" /></a>
+    <a href="https://pixelied.com/editor/design/62d95249afecc1406f2037a9"><img alt="logo" src="https://raw.githubusercontent.com/XavierJiezou/Camera-Calibration/main/images/favicon_256x256.svg" /></a>
 <h1 align="center">相机标定器</h1>
 <p align="center">一个基于OpenCV的自动化数据采集和标定程序。
 </p>
