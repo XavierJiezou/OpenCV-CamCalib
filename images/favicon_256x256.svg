@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+<desc>Created with Fabric.js 3.5.0</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="100%" height="100%" fill="#fff"/>
+<g transform="matrix(2 0 0 2 128 128)" id="178186">
+<g style="" vector-effect="non-scaling-stroke">
+		<g transform="matrix(1 0 0 1 -1.75 -12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-14.25, -3.75)" d="M 12.5 2 H 16 v 3.5 h -3.5 V 2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -12.25 -8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-3.75, -7.25)" d="M 2 5.5 h 3.5 V 9 H 2 V 5.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -8.75 -12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-7.25, -3.75)" d="M 5.5 2 H 9 v 3.5 H 5.5 V 2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -12.25 5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-3.75, -21.25)" d="M 2 19.5 h 3.5 V 23 H 2 V 19.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -12.25 -1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-3.75, -14.25)" d="M 2 12.5 h 3.5 V 16 H 2 V 12.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -1.75 1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-14.25, -17.75)" d="M 12.5 16 H 16 v 3.5 h -3.5 V 16 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 12.25 -12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-28.25, -3.75)" d="M 26.5 2 H 30 v 3.5 h -3.5 V 2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 5.25 -12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-21.25, -3.75)" d="M 19.5 2 H 23 v 3.5 h -3.5 V 2 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 8.75 12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.75, -28.25)" d="M 23 26.5 h 3.5 V 30 H 23 V 26.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 12.25 8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-28.25, -24.75)" d="M 26.5 23 H 30 v 3.5 h -3.5 V 23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -5.25 -8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-10.75, -7.25)" d="M 9 5.5 h 3.5 V 9 H 9 V 5.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 12.25 -5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-28.25, -10.75)" d="M 26.5 9 H 30 v 3.5 h -3.5 V 9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 12.25 1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-28.25, -17.75)" d="M 26.5 16 H 30 v 3.5 h -3.5 V 16 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -5.25 12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-10.75, -28.25)" d="M 9 26.5 h 3.5 V 30 H 9 V 26.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 1.75 12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-17.75, -28.25)" d="M 16 26.5 h 3.5 V 30 H 16 V 26.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 8.75 -8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.75, -7.25)" d="M 23 5.5 h 3.5 V 9 H 23 V 5.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -12.25 12.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-3.75, -28.25)" d="M 2 26.5 h 3.5 V 30 H 2 V 26.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -8.75 8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-7.25, -24.75)" d="M 5.5 23 H 9 v 3.5 H 5.5 V 23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 5.25 1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-21.25, -17.75)" d="M 19.5 16 H 23 v 3.5 h -3.5 V 16 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 5.25 8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-21.25, -24.75)" d="M 19.5 23 H 23 v 3.5 h -3.5 V 23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 5.25 -5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-21.25, -10.75)" d="M 19.5 9 H 23 v 3.5 h -3.5 V 9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 1.75 5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-17.75, -21.25)" d="M 16 19.5 h 3.5 V 23 H 16 V 19.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 1.75 -8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-17.75, -7.25)" d="M 16 5.5 h 3.5 V 9 H 16 V 5.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -1.75 8.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-14.25, -24.75)" d="M 12.5 23 H 16 v 3.5 h -3.5 V 23 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -5.25 -1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-10.75, -14.25)" d="M 9 12.5 h 3.5 V 16 H 9 V 12.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 8.75 5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.75, -21.25)" d="M 23 19.5 h 3.5 V 23 H 23 V 19.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 8.75 -1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.75, -14.25)" d="M 23 12.5 h 3.5 V 16 H 23 V 12.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -8.75 1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-7.25, -17.75)" d="M 5.5 16 H 9 v 3.5 H 5.5 V 16 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -1.75 -5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-14.25, -10.75)" d="M 12.5 9 H 16 v 3.5 h -3.5 V 9 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -5.25 5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-10.75, -21.25)" d="M 9 19.5 h 3.5 V 23 H 9 V 19.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 1.75 -1.75)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-17.75, -14.25)" d="M 16 12.5 h 3.5 V 16 H 16 V 12.5 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -8.75 -5.25)" id="chessboard">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(34,42,48); fill-rule: nonzero; opacity: 1;" transform=" translate(-7.25, -10.75)" d="M 5.5 9 H 9 v 3.5 H 5.5 V 9 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+<g transform="matrix(10.6667 0 0 10.6667 128.0004 128.0004)" id="46067">
+<g style="" vector-effect="non-scaling-stroke">
+		<g transform="matrix(1 0 0 1 0 0.0004)" id="path2392">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-12, -302.6504)" d="m 12 297.65039 c -2.74958 0 -5 2.25042 -5 5 c 0 2.74958 2.25042 5 5 5 c 2.74958 0 5 -2.25042 5 -5 c 0 -2.74958 -2.25042 -5 -5 -5 z m 0 2 c 1.6687 0 3 1.3313 3 3 c 0 1.6687 -1.3313 3 -3 3 c -1.6687 0 -3 -1.3313 -3 -3 c 0 -1.6687 1.3313 -3 3 -3 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -6.5 -6.5)" id="rect2396">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-5.5, -296.15)" d="m 6 292.65 c -2.1987 0 -4 1.8013 -4 4 v 2 a 1 1 0 0 0 1 1 a 1 1 0 0 0 1 -1 v -2 c 0 -1.1253 0.8747 -2 2 -2 h 2 a 1 1 0 0 0 1 -1 a 1 1 0 0 0 -1 -1 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 -6.5 6.5)" id="path2442">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-5.5, -309.15)" d="m 3 305.65 a 1 1 0 0 0 -1 1 v 2 c 0 2.1987 1.8013 4 4 4 h 2 a 1 1 0 0 0 1 -1 a 1 1 0 0 0 -1 -1 H 6 c -1.1253 0 -2 -0.8747 -2 -2 v -2 a 1 1 0 0 0 -1 -1 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 6.5 6.5)" id="path2430">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-18.5, -309.15)" d="m 21 305.65 a 1 1 0 0 0 -1 1 v 2 c 0 1.1253 -0.8747 2 -2 2 h -2 a 1 1 0 0 0 -1 1 a 1 1 0 0 0 1 1 h 2 c 2.1987 0 4 -1.8013 4 -4 v -2 a 1 1 0 0 0 -1 -1 z" stroke-linecap="round"/>
+</g>
+		<g transform="matrix(1 0 0 1 6.5 -6.5)" id="path2437">
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke" transform=" translate(-18.5, -296.15)" d="m 16 292.65 a 1 1 0 0 0 -1 1 a 1 1 0 0 0 1 1 h 2 c 1.1253 0 2 0.8747 2 2 v 2 a 1 1 0 0 0 1 1 a 1 1 0 0 0 1 -1 v -2 c 0 -2.1987 -1.8013 -4 -4 -4 z" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</svg>
