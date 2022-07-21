@@ -1,0 +1,43 @@
+[tool.poetry]
+authors = ["XavierJiezou <878972272@qq.com>"]
+classifiers = ["Topic :: Software Development :: Libraries :: Python Modules"]
+description = ""
+documentation = "https://github.com/XavierJiezou/CameraCalibration"
+exclude = []
+homepage = "https://github.com/XavierJiezou/CameraCalibration"
+include = ["CHANGELOG.md"]
+keywords = ["landsat8", "cloud", "mask"]
+license = "MIT"
+name = "camercalibration"
+packages = [{include = "cameracalibration"}]
+readme = "README.md"
+repository = "https://github.com/XavierJiezou/CameraCalibration"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.7.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.6.0"
+flake8 = "^4.0.1"
+pre-commit = "^2.20.0"
+pylint = "^2.14.5"
+pytest = "^7.1.2"
+pytest-cov = "^3.0.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[[tool.poetry.source]]
+default = true
+name = "tsinghua-pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+
+[tool.isort]
+filter_files = true
+multi_line_output = 3
+profile = "black"
+
+[tool.poetry.scripts]
+cloudmask = "cameracalibration.cli:main"

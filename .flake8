@@ -1,0 +1,34 @@
+[flake8]
+min_python_version = 3.7.0
+format = pylint
+max-line-length = 120
+ban-relative-imports = true
+# flake8-use-fstring: https://github.com/MichaelKim0407/flake8-use-fstring#--percent-greedy-and---format-greedy
+format-greedy = 1
+inline-quotes = double
+enable-extensions = TC, TC1
+type-checking-exempt-modules = typing, typing-extensions
+eradicate-whitelist-extend = ^-.*;
+extend-ignore =
+    # TC002: Move third-party import 'xxx' into a type-checking block
+    TC002,
+    # INP001: File is part of an implicit namespace package
+    INP001
+    # ANN101: Missing type annotation for self in method
+    ANN101
+    # E402: module level import not at top of file
+    E402
+
+per-file-ignores =
+    # F401: Module imported by unused (non-implicit modules)
+    # TC002: Move third-party import '...' into a type-checking block
+    __init__.py:F401,TC002,
+    # ANN201: Missing return type annotation for public function
+    tests/test_*:ANN201
+    tests/**/test_*:ANN201
+extend-exclude =
+    # Frozen and not subject to change in this repo:
+    docs/source/*
+    # External to the project's coding standards:
+    tests/fixtures/*,
+    tests/**/fixtures/*,

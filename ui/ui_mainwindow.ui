@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>461</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>流媒体视频播放器</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8,1">
+      <item>
+       <widget class="QLineEdit" name="url_input">
+        <property name="placeholderText">
+         <string>相机地址</string>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="image_label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="play_button">
+          <property name="text">
+           <string>播放</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="shot_button">
+          <property name="text">
+           <string>截图</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stop_button">
+          <property name="text">
+           <string>停止</string>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>461</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="open">
+    <property name="title">
+     <string>打开(&amp;O)</string>
+    </property>
+    <addaction name="camera_address"/>
+   </widget>
+   <widget class="QMenu" name="settings">
+    <property name="title">
+     <string>设置(&amp;S)</string>
+    </property>
+    <addaction name="screenshot_setting"/>
+   </widget>
+   <widget class="QMenu" name="help">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="data_collection"/>
+    <addaction name="about_us"/>
+   </widget>
+   <widget class="QMenu" name="calibration">
+    <property name="title">
+     <string>标定(&amp;C)</string>
+    </property>
+   </widget>
+   <addaction name="open"/>
+   <addaction name="calibration"/>
+   <addaction name="settings"/>
+   <addaction name="help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="camera_address">
+   <property name="text">
+    <string>相机地址(&amp;L)</string>
+   </property>
+   <property name="toolTip">
+    <string>相机地址</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="screenshot_setting">
+   <property name="text">
+    <string>截图设置(&amp;F)</string>
+   </property>
+   <property name="toolTip">
+    <string>截图设置</string>
+   </property>
+  </action>
+  <action name="about_us">
+   <property name="text">
+    <string>关于我们(&amp;A)</string>
+   </property>
+   <property name="toolTip">
+    <string>关于我们</string>
+   </property>
+  </action>
+  <action name="data_collection">
+   <property name="text">
+    <string>数据采集(&amp;D)</string>
+   </property>
+   <property name="toolTip">
+    <string>数据采集</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
