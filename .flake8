@@ -18,6 +18,8 @@ extend-ignore =
     ANN101
     # E402: module level import not at top of file
     E402
+    # N802: function name should be lowercase
+    N802
 
 per-file-ignores =
     # F401: Module imported by unused (non-implicit modules)

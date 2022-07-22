@@ -3,17 +3,15 @@ import sys
 import time
 
 import cv2
-from PySide6.QtWidgets import QFileDialog, QDialog, QMessageBox, QApplication, QInputDialog, QMainWindow
+from PySide6.QtCore import Qt, QTimer, Slot
 from PySide6.QtGui import QImage, QPixmap
-from PySide6.QtCore import QTimer, Slot, QFile, Qt
+from PySide6.QtWidgets import QApplication, QInputDialog, QMainWindow, QMessageBox
 
-
-from ui.ui_mainwindow import Ui_MainWindow
 from ui.screenshot_setting import ScreenshotSetting
+from ui.ui_mainwindow import Ui_MainWindow
 
 
 class SimpleVideoPlayer(QMainWindow):
-
     def __init__(self) -> None:
         super().__init__()
 
@@ -35,22 +33,22 @@ class SimpleVideoPlayer(QMainWindow):
         self.timer.timeout.connect(self.update_frame)
 
     @Slot()
-    def screenshot_setting(self):
+    def screenshot_setting(self) -> None:
         self.screenshot_dialog.show()
 
     @Slot()
-    def camera_address(self):
+    def camera_address(self) -> None:
         input_dialog = QInputDialog()
         camera_address, is_ok = input_dialog.getText(
             self,
-            '相机地址',
-            '请输入相机地址',
+            "相机地址",
+            "请输入相机地址",
         )
         if is_ok:
             self.start_update(camera_address)
 
     @Slot()
-    def data_collection(self):
+    def data_collection(self) -> None:
         QMessageBox.information(
             self,
             "数据采集",
@@ -60,7 +58,7 @@ class SimpleVideoPlayer(QMainWindow):
         )
 
     @Slot()
-    def about_us(self):
+    def about_us(self) -> None:
         QMessageBox.about(
             self,
             "关于我们",
@@ -68,7 +66,7 @@ class SimpleVideoPlayer(QMainWindow):
         )
 
     @Slot()
-    def update_frame(self):
+    def update_frame(self) -> None:
         if self.status:
             ret, frame = self.cap.read()
             if ret:
@@ -83,7 +81,8 @@ class SimpleVideoPlayer(QMainWindow):
                 )
                 self.ui.image_label.setPixmap(
                     QPixmap.fromImage(image).scaled(
-                        self.ui.image_label.size(), Qt.KeepAspectRatio)
+                        self.ui.image_label.size(), Qt.KeepAspectRatio
+                    )
                 )
             else:
                 pass
@@ -91,7 +90,7 @@ class SimpleVideoPlayer(QMainWindow):
             pass
 
     @Slot()
-    def start(self):
+    def start(self) -> None:
         self.status = True
         self.timer.start()
         self.ui.play_button.setEnabled(True)
@@ -99,10 +98,10 @@ class SimpleVideoPlayer(QMainWindow):
         self.ui.stop_button.setEnabled(True)
 
     @Slot()
-    def stop(self):
+    def stop(self) -> None:
         self.status = False
         self.timer.stop()
-        if hasattr(self, 'cap'):
+        if hasattr(self, "cap"):
             self.cap.release()
         else:
             pass
@@ -111,53 +110,53 @@ class SimpleVideoPlayer(QMainWindow):
         self.ui.stop_button.setEnabled(False)
 
     @Slot()
-    def start_update(self, url):
+    def start_update(self, url: str) -> None:
         self.cap = cv2.VideoCapture(url)
         if self.cap.isOpened():
             self.ui.url_input.setText(url)
-            self.ui.image_label.setText('正在加载视频..')
+            self.ui.image_label.setText("正在加载视频..")
             self.start()
         else:
-            self.ui.image_label.setText('无效的视频链接')
+            self.ui.image_label.setText("无效的视频链接")
             self.stop()
             self.ui.shot_button.setEnabled(False)
 
     @Slot()
-    def on_url_input_textChanged(self):
-        if hasattr(self, 'cap') and self.cap.isOpened():
+    def on_url_input_textChanged(self) -> None:
+        if hasattr(self, "cap") and self.cap.isOpened():
             pass
         elif not self.ui.url_input.text():
-            self.ui.image_label.setText('请输入视频链接')
+            self.ui.image_label.setText("请输入视频链接")
         else:
             pass
 
     @Slot()
-    def on_url_input_editingFinished(self):
+    def on_url_input_editingFinished(self) -> None:
         self.start_update(self.ui.url_input.text())
 
     @Slot()
-    def on_play_button_clicked(self):
+    def on_play_button_clicked(self) -> None:
         self.start_update(self.ui.url_input.text())
 
     @Slot()
-    def on_shot_button_clicked(self):
+    def on_shot_button_clicked(self) -> None:
         save_dir = self.screenshot_dialog.lineEdit.text()
         if self.screenshot_dialog.radioButton.isChecked():
-            save_format = 'bmp'
+            save_format = "bmp"
         elif self.screenshot_dialog.radioButton_2.isChecked():
-            save_format = 'png'
+            save_format = "png"
         else:
-            save_format = 'jpg'
-        save_name = f'{round(time.time())}.{save_format}'
+            save_format = "jpg"
+        save_name = f"{round(time.time())}.{save_format}"
         save_path = os.path.join(save_dir, save_name)
         cv2.imwrite(save_path, self.frames)
 
     @Slot()
-    def on_stop_button_clicked(self):
+    def on_stop_button_clicked(self) -> None:
         self.stop()
 
 
-if __name__ == '__main__':  # rtsp://admin:abcd8403@172.16.14.37:20001
+if __name__ == "__main__":
     app = QApplication([])
     widget = SimpleVideoPlayer()
     widget.resize(800, 600)
