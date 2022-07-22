@@ -79,7 +79,7 @@ pip install camera-calibration
 
 ## 用法
 
-`$ cloudmask`
+`$ camera-calibration   `
 
 ## Data
 
