@@ -9,6 +9,9 @@
         <img src="https://github.com/XavierJiezou/Camera-Calibration/workflows/Release/badge.svg"
             alt="GitHub Workflow Release Status" />
     </a>
+    <a href="https://github.com/XavierJiezou/Camera-Calibration/actions?query=workflow:Lint">
+        <img src="https://github.com/XavierJiezou/LitMNIST/workflows/Lint/badge.svg"
+            alt="GitHub Workflow Lint Status" />
     <a
         href="https://www.codacy.com/gh/XavierJiezou/Camera-Calibration/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XavierJiezou/Camera-Calibration&amp;utm_campaign=Badge_Grade">
         <img src="https://app.codacy.com/project/badge/Grade/c2f85c8d6b8a4892b40059703f087eab" alt="Codacy Badge">
