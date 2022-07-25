@@ -86,6 +86,28 @@ pip install opencv-camcalib
 
 `$ opencv-camcalib`
 
+## 文档
+
+- 安装
+
+```bash
+git clone https://github.com/XavierJiezou/OpenCV-CamCalib.git
+cd OpenCV-CamCalib/docs/
+pip install -r requirements.txt
+```
+
+- 构建
+
+```bash
+mkdocs build -f mkdocs.yml
+```
+
+- 部署
+
+```bash
+mkdocs serve -f mkdocs.yml
+```
+
 ## 日志
 
 见 [CHANGELOG.md](/CHANGELOG.md)
