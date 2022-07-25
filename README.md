@@ -84,19 +84,17 @@ pip install camera-calibration
 
 `$ camera-calibration   `
 
-## Data
+## 日志
 
-## Changelog
+见 [CHANGELOG.md](/CHANGELOG.md)
 
-See [CHANGELOG.md](/CHANGELOG.md)
-
-## License
+## 证书
 
 [MIT License](/LICENSE)
 
-## Dependencies
+## 依赖
 
-### Production Dependencies
+### 生产依赖
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=psf&repo=requests)](https://github.com/psf/requests)
 
@@ -104,7 +102,7 @@ See [CHANGELOG.md](/CHANGELOG.md)
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=google&repo=python-fire)](https://github.com/google/python-fire)
 
-### Development dependencies
+### 开发依赖
 
 [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=python-poetry&repo=poetry)](https://github.com/python-poetry/poetry)
 
