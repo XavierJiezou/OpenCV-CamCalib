@@ -67,7 +67,7 @@
 
 ## 演示
 
-![demo](https://raw.githubusercontent.com/XavierJiezou/Camera-Calibration/main/images/favicon_256x256.svg)
+![demo](https://raw.githubusercontent.com/XavierJiezou/Camera-Calibration/main/images/demo.png)
 
 ## 功能
 
