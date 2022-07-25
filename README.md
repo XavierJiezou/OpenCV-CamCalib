@@ -9,6 +9,9 @@
         <img src="https://github.com/XavierJiezou/OpenCV-CamCalib/workflows/Release/badge.svg"
             alt="GitHub Workflow Release Status" />
     </a>
+    <a href='https://opencv-camera-calibration.readthedocs.io/zh/latest/?badge=latest'>
+        <img src='https://readthedocs.org/projects/opencv-camera-calibration/badge/?version=latest' alt='Documentation Status' />
+    </a>
     <a href="https://github.com/XavierJiezou/OpenCV-CamCalib/actions?query=workflow:Lint">
         <img src="https://github.com/XavierJiezou/LitMNIST/workflows/Lint/badge.svg"
             alt="GitHub Workflow Lint Status" />
