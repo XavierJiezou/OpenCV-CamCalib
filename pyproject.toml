@@ -2,16 +2,16 @@
 authors = ["XavierJiezou <878972272@qq.com>"]
 classifiers = ["Topic :: Software Development :: Libraries :: Python Modules"]
 description = ""
-documentation = "https://github.com/XavierJiezou/CameraCalibration"
+documentation = "https://github.com/XavierJiezou/Camera-Calibraten"
 exclude = []
-homepage = "https://github.com/XavierJiezou/CameraCalibration"
+homepage = "https://github.com/XavierJiezou/Camera-Calibrate"
 include = ["CHANGELOG.md"]
 keywords = ["landsat8", "cloud", "mask"]
 license = "MIT"
-name = "camercalibration"
-packages = [{include = "cameracalibration"}]
+name = "camera-calibrate"
+packages = [{include = "camera_calibrate"}]
 readme = "README.md"
-repository = "https://github.com/XavierJiezou/CameraCalibration"
+repository = "https://github.com/XavierJiezou/Camera-Calibrate"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
@@ -42,4 +42,4 @@ multi_line_output = 3
 profile = "black"
 
 [tool.poetry.scripts]
-cloudmask = "cameracalibration.cli:main"
+camera-calibrate = "camera_calibration.cli:main"

@@ -37,4 +37,4 @@ extend-exclude =
     tests/fixtures/*,
     tests/**/fixtures/*,
     # PySide6 Ui
-    camera_calibration/gui/ui/*
+    camera_calibrate/gui/ui/*
