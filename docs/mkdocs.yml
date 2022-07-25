@@ -1,0 +1,25 @@
+# [Configuration](https://www.mkdocs.org/user-guide/configuration/)
+## Project information
+site_name: Basis for Deep Learning with PyTorch
+site_url: null
+repo_url: https://github.com/XavierJiezou/Basis-for-Deep-Learning-with-PyTorch
+repo_name: GitHub
+edit_uri: edit/main/docs/source
+site_description: Basis for Deep Learning with PyTorch
+site_author: Xavier Jiezou
+copyright: 2022, Xavier Jiezou
+remote_branch: gh-pages
+remote_name: origin
+## Documentation layout
+# nav:
+#     - Home: index.md
+#     - About: about.md
+#     - Api: api.md
+## Build directories
+theme:
+    name: material # readthedocs
+    favicon: image/favicon.ico
+    logo: image/favicon.ico
+    language: zh
+docs_dir: source
+site_dir: site

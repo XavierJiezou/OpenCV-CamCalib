@@ -1,0 +1,6 @@
+sphinx
+sphinx_rtd_theme
+sphinx-autobuild
+myst-parser
+mkdocs
+mkdocs-material
