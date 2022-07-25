@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>流媒体视频播放器</string>
+   <string>相机标定器</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -107,6 +107,7 @@
     <property name="title">
      <string>标定(&amp;C)</string>
     </property>
+    <addaction name="chessboard_calibration"/>
    </widget>
    <addaction name="open"/>
    <addaction name="calibration"/>
@@ -147,6 +148,14 @@
    </property>
    <property name="toolTip">
     <string>数据采集</string>
+   </property>
+  </action>
+  <action name="chessboard_calibration">
+   <property name="text">
+    <string>棋盘标定(&amp;B)</string>
+   </property>
+   <property name="toolTip">
+    <string>棋盘标定</string>
    </property>
   </action>
  </widget>

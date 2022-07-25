@@ -3,22 +3,24 @@ import sys
 import time
 
 import cv2
+from config import icon_path, main_size
 from PySide6.QtCore import Qt, QTimer, Slot
-from PySide6.QtGui import QImage, QPixmap
+from PySide6.QtGui import QIcon, QImage, QPixmap
 from PySide6.QtWidgets import QApplication, QInputDialog, QMainWindow, QMessageBox
-
-from ui.screenshot_setting import ScreenshotSetting
-from ui.ui_mainwindow import Ui_MainWindow
+from screenshot_setting import ScreenshotSetting
+from ui.main_window import Ui_MainWindow
 
 
 class SimpleVideoPlayer(QMainWindow):
     def __init__(self) -> None:
         super().__init__()
 
+        self.setWindowIcon(QIcon(icon_path))
+
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.screenshot_dialog = ScreenshotSetting()
+        self.dialog = ScreenshotSetting()
 
         self.ui.play_button.setEnabled(True)
         self.ui.shot_button.setEnabled(False)
@@ -34,12 +36,11 @@ class SimpleVideoPlayer(QMainWindow):
 
     @Slot()
     def screenshot_setting(self) -> None:
-        self.screenshot_dialog.show()
+        self.dialog.show()
 
     @Slot()
     def camera_address(self) -> None:
-        input_dialog = QInputDialog()
-        camera_address, is_ok = input_dialog.getText(
+        camera_address, is_ok = QInputDialog().getText(
             self,
             "相机地址",
             "请输入相机地址",
@@ -52,9 +53,7 @@ class SimpleVideoPlayer(QMainWindow):
         QMessageBox.information(
             self,
             "数据采集",
-            "1. 单台相机至少需要采集 15-20 张图片\n"
-            "2. 尽量保证棋盘的光照足够且均匀（不宜曝光）\n"
-            "3. 标定过程中不能改变相机的光圈或焦距",
+            "1. 单台相机至少需要采集 15~20 张图片\n" "2. 尽量保证标定板上的光照足够且均匀\n" "3. 标定过程中不能改变相机光圈或焦距",
         )
 
     @Slot()
@@ -62,7 +61,7 @@ class SimpleVideoPlayer(QMainWindow):
         QMessageBox.about(
             self,
             "关于我们",
-            "Version 1.0.1",
+            "Version 0.1.0",
         )
 
     @Slot()
@@ -156,9 +155,13 @@ class SimpleVideoPlayer(QMainWindow):
         self.stop()
 
 
-if __name__ == "__main__":
-    app = QApplication([])
-    widget = SimpleVideoPlayer()
-    widget.resize(800, 600)
-    widget.show()
+def main() -> None:
+    app = QApplication()
+    win = SimpleVideoPlayer()
+    win.resize(*(main_size))
+    win.show()
     sys.exit(app.exec())
+
+
+if __name__ == "__main__":
+    main()

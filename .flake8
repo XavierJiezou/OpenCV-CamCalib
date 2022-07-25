@@ -20,6 +20,8 @@ extend-ignore =
     E402
     # N802: function name should be lowercase
     N802
+    ; # F401: F401] 'xxx' imported but unused
+    ; F401
 
 per-file-ignores =
     # F401: Module imported by unused (non-implicit modules)
@@ -34,3 +36,5 @@ extend-exclude =
     # External to the project's coding standards:
     tests/fixtures/*,
     tests/**/fixtures/*,
+    # PySide6 Ui
+    camera_calibration/gui/ui/*
