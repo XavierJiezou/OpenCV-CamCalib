@@ -23,3 +23,6 @@ theme:
     language: zh
 docs_dir: source
 site_dir: site
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
