@@ -67,6 +67,8 @@
 
 ## 演示
 
+> 测试相机 RTSP 地址：[rtsp://admin:a12345678@y52t229909.zicp.vip](rtsp://admin:a12345678@y52t229909.zicp.vip)
+
 ![demo](https://raw.githubusercontent.com/XavierJiezou/Camera-Calibration/main/images/demo.png)
 
 ## 功能
