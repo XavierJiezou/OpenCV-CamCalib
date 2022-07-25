@@ -6,7 +6,7 @@ documentation = "https://github.com/XavierJiezou/OpenCV-CamCalib"
 exclude = []
 homepage = "https://github.com/XavierJiezou/OpenCV-CamCalib"
 include = ["CHANGELOG.md"]
-keywords = ["landsat8", "cloud", "mask"]
+keywords = ["python", "opencv", "camera", "calibration"]
 license = "MIT"
 name = "opencv-camcalib"
 packages = [{include = "opencv_camcalib"}]

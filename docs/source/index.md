@@ -50,7 +50,7 @@
     </a>
 </p>
 <p align="center">
-    <a href="#演示">观看演示</a>
+    <a href="#_1">观看演示</a>
     •
     <a href="https://github.com/xavierjiezou/OpenCV-CamCalib/issues/new">报告错误</a>
     •
