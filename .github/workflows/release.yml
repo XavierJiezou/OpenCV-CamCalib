@@ -48,10 +48,10 @@ jobs:
           allowUpdates: true
           replacesArtifacts: true
 
-      # - name: Publish to PyPI
-      #   env:
-      #     POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
-      #   run: poetry publish
+      - name: Publish to PyPI
+        env:
+          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
+        run: poetry publish
 
       # - name: Publish to PyPI
       #   uses: ortega2247/pypi-upload-action@master
