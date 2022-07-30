@@ -38,3 +38,6 @@ extend-exclude =
     tests/**/fixtures/*,
     # PySide6 Ui
     opencv_camcalib/gui/ui/*
+    # gen_pattern
+    opencv_camcalib/utils/gen_pattern.py
+    opencv_camcalib/utils/svgfig.py

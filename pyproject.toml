@@ -20,6 +20,7 @@ opencv-python = "^4.6.0"
 pyside6 = "^6.3.1"
 rich = "^12.5.1"
 fire = "^0.4.0"
+func-timeout = "^4.3.5"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
