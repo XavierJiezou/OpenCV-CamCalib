@@ -111,6 +111,15 @@ mkdocs build -f mkdocs.yml
 mkdocs serve -f mkdocs.yml
 ```
 
+## 贡献
+
+```bash
+git clone https://github.com/XavierJiezou/OpenCV-CamCalib.git
+cd OpenCV-CamCalib/
+pip install poetry
+poetry install
+```
+
 ## 日志
 
 见 [CHANGELOG.md](/CHANGELOG.md)
