@@ -95,20 +95,20 @@ pip install opencv-camcalib
 
 ```bash
 git clone https://github.com/XavierJiezou/OpenCV-CamCalib.git
-cd OpenCV-CamCalib/docs/
-pip install -r requirements.txt
+cd OpenCV-CamCalib/
+pip install -r docs/requirements.txt
 ```
 
 - 构建
 
 ```bash
-mkdocs build -f mkdocs.yml
+mkdocs build
 ```
 
 - 部署
 
 ```bash
-mkdocs serve -f mkdocs.yml
+mkdocs serve
 ```
 
 ## 贡献
