@@ -4,7 +4,7 @@ site_name: Camera Calibration
 site_url: null
 repo_url: https://github.com/XavierJiezou/Camera-Calibrate
 repo_name: GitHub
-edit_uri: edit/main/docs/source
+edit_uri: edit/main/docs
 site_description: Camera Calibration with OpenCV-Python
 site_author: Xavier Jiezou
 copyright: 2022, Xavier Jiezou
