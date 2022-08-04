@@ -139,7 +139,7 @@ poetry build
 - 图像界面
 
 ```bash
-pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico
+pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-0.1.0
 ```
 
 ## 文档

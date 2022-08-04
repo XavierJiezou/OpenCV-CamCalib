@@ -9,8 +9,58 @@ on:
   #     - "*.*.*"
 
 jobs:
-  release:
-    name: Release
+  release-windows:
+    name: Release-windows
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Update PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Build
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+  release-macos:
+    name: Release-macos
+    runs-on: macos-11
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Update PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: poetry install
+
+      - name: Build
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+  release-ubuntu:
+    name: Release-ubuntu
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -37,6 +87,9 @@ jobs:
         run: |
           [[ "$(poetry version --short)" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
             || echo ::set-output name=prerelease::true
+
+      - name: Build
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
 
       - name: Create Release
         uses: ncipollo/release-action@v1
