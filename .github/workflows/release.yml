@@ -32,9 +32,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build
+      - name: Install pyinstaller
         run: pip install pyinstaller
-          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+
+      - name: Build
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
   release-macos:
     name: Release-macos
     runs-on: macos-11
@@ -58,9 +60,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build
+      - name: Install pyinstaller
         run: pip install pyinstaller
-          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+
+      - name: Build
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
   # release-ubuntu:
   #   name: Release-ubuntu
   #   runs-on: ubuntu-latest
