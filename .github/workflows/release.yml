@@ -30,10 +30,11 @@ jobs:
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
-        run: poetry install
+        run: pip install -r requirements.txt
 
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+        run: pip install pyinstaller
+          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
   release-macos:
     name: Release-macos
     runs-on: macos-11
@@ -55,59 +56,60 @@ jobs:
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
 
       - name: Install dependencies
-        run: poetry install
+        run: pip install -r requirements.txt
 
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
-  release-ubuntu:
-    name: Release-ubuntu
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+        run: pip install pyinstaller
+          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+  # release-ubuntu:
+  #   name: Release-ubuntu
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: write
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
 
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
-        with:
-          python-version: "3.9"
+  #     - name: Set up Python 3.9
+  #       uses: actions/setup-python@v2
+  #       with:
+  #         python-version: "3.9"
 
-      - name: Install Poetry
-        run: pip install poetry
+  #     - name: Install Poetry
+  #       run: pip install poetry
 
-      - name: Update PATH
-        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+  #     - name: Update PATH
+  #       run: echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-      - name: Build project for distribution
-        run: poetry build
+  #     - name: Build project for distribution
+  #       run: poetry build
 
-      - name: Check Version
-        id: check-version
-        run: |
-          [[ "$(poetry version --short)" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
-            || echo ::set-output name=prerelease::true
+  #     - name: Check Version
+  #       id: check-version
+  #       run: |
+  #         [[ "$(poetry version --short)" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
+  #           || echo ::set-output name=prerelease::true
 
-      - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+  #     - name: Build
+  #       run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "dist/*"
-          token: ${{ secrets.GITHUB_TOKEN }}
-          draft: false
-          prerelease: steps.check-version.outputs.prerelease == 'true'
-          allowUpdates: true
-          replacesArtifacts: true
+  #     - name: Create Release
+  #       uses: ncipollo/release-action@v1
+  #       with:
+  #         artifacts: "dist/*"
+  #         token: ${{ secrets.GITHUB_TOKEN }}
+  #         draft: false
+  #         prerelease: steps.check-version.outputs.prerelease == 'true'
+  #         allowUpdates: true
+  #         replacesArtifacts: true
 
-      - name: Publish to PyPI
-        env:
-          POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
-        run: poetry publish
+  #     - name: Publish to PyPI
+  #       env:
+  #         POETRY_PYPI_TOKEN_PYPI: ${{ secrets.PYPI_TOKEN }}
+  #       run: poetry publish
 
-      # - name: Publish to PyPI
-      #   uses: ortega2247/pypi-upload-action@master
-      #   with:
-      #     user: XavierJiezou
-      #     password: ${{ secrets.PYPI_PASSWORD }}
+  # - name: Publish to PyPI
+  #   uses: ortega2247/pypi-upload-action@master
+  #   with:
+  #     user: XavierJiezou
+  #     password: ${{ secrets.PYPI_PASSWORD }}
