@@ -3,12 +3,15 @@ import sys
 import time
 
 import cv2
-from config import icon_path, main_size
 from PySide6.QtCore import Qt, QTimer, Slot
 from PySide6.QtGui import QIcon, QImage, QPixmap
 from PySide6.QtWidgets import QApplication, QInputDialog, QMainWindow, QMessageBox
-from screenshot_setting import ScreenshotSetting
-from ui.main_window import Ui_MainWindow
+
+from opencv_camcalib.gui.chessboard_calibration import ChessboardCalibration
+from opencv_camcalib.gui.config import icon_path, main_size
+from opencv_camcalib.gui.distortion_correction import DistortionCorrection
+from opencv_camcalib.gui.screenshot_setting import ScreenshotSetting
+from opencv_camcalib.gui.ui.main_window import Ui_MainWindow
 
 
 class SimpleVideoPlayer(QMainWindow):
@@ -20,7 +23,9 @@ class SimpleVideoPlayer(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-        self.dialog = ScreenshotSetting()
+        self.screenshot_setting_dialog = ScreenshotSetting()
+        self.chessboard_calibration_dialog = ChessboardCalibration()
+        self.distortion_correction_dialog = DistortionCorrection()
 
         self.ui.play_button.setEnabled(True)
         self.ui.shot_button.setEnabled(False)
@@ -30,13 +35,23 @@ class SimpleVideoPlayer(QMainWindow):
         self.ui.data_collection.triggered.connect(self.data_collection)
         self.ui.camera_address.triggered.connect(self.camera_address)
         self.ui.screenshot_setting.triggered.connect(self.screenshot_setting)
+        self.ui.chessboard_calibration.triggered.connect(self.chessboard_calibration)
+        self.ui.distortion_correction.triggered.connect(self.distortion_correction)
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_frame)
 
     @Slot()
+    def distortion_correction(self) -> None:
+        self.distortion_correction_dialog.show()
+
+    @Slot()
+    def chessboard_calibration(self) -> None:
+        self.chessboard_calibration_dialog.show()
+
+    @Slot()
     def screenshot_setting(self) -> None:
-        self.dialog.show()
+        self.screenshot_setting_dialog.show()
 
     @Slot()
     def camera_address(self) -> None:
@@ -139,10 +154,11 @@ class SimpleVideoPlayer(QMainWindow):
 
     @Slot()
     def on_shot_button_clicked(self) -> None:
-        save_dir = self.screenshot_dialog.lineEdit.text()
-        if self.screenshot_dialog.radioButton.isChecked():
+        save_dir = self.screenshot_setting_dialog.ui.lineEdit.text()
+        print(save_dir)
+        if self.screenshot_setting_dialog.ui.radioButton.isChecked():
             save_format = "bmp"
-        elif self.screenshot_dialog.radioButton_2.isChecked():
+        elif self.screenshot_setting_dialog.ui.radioButton_2.isChecked():
             save_format = "png"
         else:
             save_format = "jpg"

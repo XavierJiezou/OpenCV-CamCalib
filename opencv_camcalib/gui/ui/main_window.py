@@ -70,6 +70,8 @@ class Ui_MainWindow:
         self.data_collection.setObjectName("data_collection")
         self.chessboard_calibration = QAction(MainWindow)
         self.chessboard_calibration.setObjectName("chessboard_calibration")
+        self.distortion_correction = QAction(MainWindow)
+        self.distortion_correction.setObjectName("distortion_correction")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayout_2 = QVBoxLayout(self.centralwidget)
@@ -142,6 +144,7 @@ class Ui_MainWindow:
         self.help.addAction(self.data_collection)
         self.help.addAction(self.about_us)
         self.calibration.addAction(self.chessboard_calibration)
+        self.calibration.addAction(self.distortion_correction)
 
         self.retranslateUi(MainWindow)
 
@@ -210,6 +213,11 @@ class Ui_MainWindow:
             QCoreApplication.translate("MainWindow", "\u68cb\u76d8\u6807\u5b9a", None)
         )
         # endif // QT_CONFIG(tooltip)
+        self.distortion_correction.setText(
+            QCoreApplication.translate(
+                "MainWindow", "\u7578\u53d8\u7ea0\u6b63(&J)", None
+            )
+        )
         self.url_input.setPlaceholderText(
             QCoreApplication.translate("MainWindow", "\u76f8\u673a\u5730\u5740", None)
         )

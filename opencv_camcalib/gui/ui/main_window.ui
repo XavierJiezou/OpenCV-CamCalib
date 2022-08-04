@@ -108,6 +108,7 @@
      <string>标定(&amp;C)</string>
     </property>
     <addaction name="chessboard_calibration"/>
+    <addaction name="distortion_correction"/>
    </widget>
    <addaction name="open"/>
    <addaction name="calibration"/>
@@ -156,6 +157,11 @@
    </property>
    <property name="toolTip">
     <string>棋盘标定</string>
+   </property>
+  </action>
+  <action name="distortion_correction">
+   <property name="text">
+    <string>畸变纠正(&amp;J)</string>
    </property>
   </action>
  </widget>

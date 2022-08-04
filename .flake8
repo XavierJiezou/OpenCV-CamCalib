@@ -22,6 +22,8 @@ extend-ignore =
     N802
     ; # F401: F401] 'xxx' imported but unused
     ; F401
+    E203
+    # E203: whitespace before ':'
 
 per-file-ignores =
     # F401: Module imported by unused (non-implicit modules)

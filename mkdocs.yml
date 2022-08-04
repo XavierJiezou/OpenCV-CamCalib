@@ -19,21 +19,28 @@ remote_name: origin
 docs_dir: docs
 site_dir: site
 theme:
-      name: material # readthedocs
-      favicon: images/favicon_256x256.ico
-      logo: images/favicon_256x256.ico
-      language: zh
+        name: material # readthedocs
+        favicon: images/favicon_256x256.ico
+        logo: images/favicon_256x256.ico
+        language: zh
+        features:
+                - content.tooltips
 markdown_extensions:
-      - pymdownx.tasklist:
-              custom_checkbox: true
-      - pymdownx.arithmatex:
-              generic: true
-      - pymdownx.highlight:
-              anchor_linenums: true
-      - pymdownx.inlinehilite
-      - pymdownx.snippets
-      - pymdownx.superfences
+        - pymdownx.tasklist:
+                  custom_checkbox: true
+        - pymdownx.arithmatex:
+                  generic: true
+        - pymdownx.highlight:
+                  anchor_linenums: true
+        - pymdownx.inlinehilite
+        - pymdownx.snippets
+        - pymdownx.superfences
+        - attr_list
+        - admonition
+        - pymdownx.details
+        - pymdownx.superfences
+
 extra_javascript:
-      - javascripts/mathjax.js
-      - https://polyfill.io/v3/polyfill.min.js?features=es6
-      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+        - javascripts/mathjax.js
+        - https://polyfill.io/v3/polyfill.min.js?features=es6
+        - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

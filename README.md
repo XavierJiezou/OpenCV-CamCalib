@@ -76,10 +76,20 @@
 
 ## 功能
 
-- [x] RTSP 相机流数据采集
-- [ ] 基于棋盘格的相机标定
+- [x] 数据采集
+- [x] 棋盘标定
+- [x] 畸变矫正
+- [ ] 圆孔标定
 
 ## 安装
+
+### 命令界面
+
+```bash
+pip install opencv-camcalib
+```
+
+### 图像界面
 
 ```bash
 pip install opencv-camcalib
@@ -87,7 +97,43 @@ pip install opencv-camcalib
 
 ## 用法
 
+### 命令界面
+
 `$ opencv-camcalib`
+
+- 数据采集
+
+```bash
+opencv-camcalib capture rtsp://admin:a12345678@y52t229909.zicp.vip
+```
+
+- 棋盘标定
+
+```bash
+opencv-camcalib calibrate --data_dir="/path/to/data" --rows=9 --cols=6
+```
+
+- 畸变纠正
+
+```bash
+opencv-camcalib undistort --data_dir="/path/to/data"
+```
+
+### 图形界面
+
+## 构建
+
+- 命令界面
+
+```bash
+poetry build
+```
+
+- 图像界面
+
+```bash
+pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico
+```
 
 ## 文档
 

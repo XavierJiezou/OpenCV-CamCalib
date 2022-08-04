@@ -1,10 +1,11 @@
 import sys
 
-from config import icon_path
 from PySide6.QtCore import Slot
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication, QDialog, QFileDialog
-from ui.screenshot_setting import Ui_Dialog
+
+from opencv_camcalib.gui.config import icon_path
+from opencv_camcalib.gui.ui.screenshot_setting import Ui_Dialog
 
 
 class ScreenshotSetting(QDialog):

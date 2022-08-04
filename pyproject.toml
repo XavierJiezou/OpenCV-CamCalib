@@ -15,22 +15,23 @@ repository = "https://github.com/XavierJiezou/OpenCV-CamCalib"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = ">=3.7, <3.11"
-opencv-python = "^4.6.0"
-pyside6 = "^6.3.1"
-rich = "^12.5.1"
 fire = "^0.4.0"
 func-timeout = "^4.3.5"
+opencv-python = "<=4.5.5.64"
+pyside6 = "^6.3.1"
+python = ">=3.7, <3.11"
+qt-material = "^2.12"
+rich = "^12.5.1"
 
 [tool.poetry.dev-dependencies]
 black = "^22.6.0"
 flake8 = "^4.0.1"
 pre-commit = "^2.20.0"
+pyinstaller = "^5.2"
 pylint = "^2.14.5"
 pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
 toml = "^0.10.2"
-pyinstaller = "^5.2"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
