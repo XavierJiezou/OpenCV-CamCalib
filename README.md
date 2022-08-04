@@ -121,6 +121,13 @@ opencv-camcalib undistort --data_dir="/path/to/data"
 
 ### 图形界面
 
+![1](/images/gui/1_main_window.png)
+![2](/images/gui/2_chessboard_calibration.png)
+![3](/images/gui/3_distortion_correction.png)
+![4](/images/gui/4_screenshot_setting.png)
+![5](/images/gui/5_data_collection.png)
+![6](/images/gui/6_about_us.png)
+
 ## 构建
 
 - 命令界面
