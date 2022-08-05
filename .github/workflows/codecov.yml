@@ -25,7 +25,7 @@ jobs:
       - name: Generate coverage report
         run: |
           pip install -r requirements.txt
-          pip install pytest pytest-cov
+          pip install pytest pytest-cov opencv-camcalib
           pytest --cov=./ --cov-report=xml tests/
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
