@@ -23,10 +23,8 @@ jobs:
           python-version: 3.7
       - name: Generate coverage report
         run: |
-          pip install opencv-camcalib
-          pip install toml
-          pip install pytest
-          pip install pytest-cov
+          pip install poetry
+          poetry install
           pytest --cov=./ --cov-report=xml tests/
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v2
