@@ -37,6 +37,16 @@ jobs:
 
       - name: Build
         run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "dist/*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          draft: false
+          prerelease: steps.check-version.outputs.prerelease == 'true'
+          allowUpdates: true
+          replacesArtifacts: true
   release-macos:
     name: Release-macos
     runs-on: macos-11
@@ -63,8 +73,29 @@ jobs:
       - name: Install pyinstaller and pillow
         run: pip install pyinstaller pillow
 
+      - name: Insall create-dmg
+        run: brew install create-dmg
+
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+        run: |
+          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico
+          create-dmg \
+            --volname app \
+            --volicon images/favicon_256x256.ico \
+            --icon app.app 200 190 \
+            --hide-extension app.app \
+            dist/opencv-camcalib-$(poetry version --short).dmg \
+            dist/
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "dist/*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          draft: false
+          prerelease: steps.check-version.outputs.prerelease == 'true'
+          allowUpdates: true
+          replacesArtifacts: true
   release-ubuntu:
     name: Release-ubuntu
     runs-on: ubuntu-latest
