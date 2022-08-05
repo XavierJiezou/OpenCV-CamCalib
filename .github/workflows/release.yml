@@ -36,7 +36,7 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short)
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images" -n opencv-camcalib-$(poetry version --short)
 
       - name: Create Release
         uses: ncipollo/release-action@v1
@@ -78,7 +78,7 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico
+          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images"
           create-dmg \
             --volname app \
             --volicon images/favicon_256x256.ico \
@@ -86,6 +86,7 @@ jobs:
             --hide-extension app.app \
             dist/opencv-camcalib-$(poetry version --short).dmg \
             dist/
+          rm dist/app
 
       - name: Create Release
         uses: ncipollo/release-action@v1
@@ -129,7 +130,7 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-$(poetry version --short).AppImage
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images" -n opencv-camcalib-$(poetry version --short).AppImage
 
       - name: Create Release
         uses: ncipollo/release-action@v1
