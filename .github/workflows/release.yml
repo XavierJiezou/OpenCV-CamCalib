@@ -130,7 +130,7 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build
-        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images" -n opencv-camcalib-$(poetry version --short).AppImage
+        run: pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico:images" -n opencv-camcalib-$(poetry version --short).AppImage
 
       - name: Create Release
         uses: ncipollo/release-action@v1
