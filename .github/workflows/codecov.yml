@@ -23,6 +23,7 @@ jobs:
           python-version: 3.9
       - name: Generate coverage report
         run: |
+          pip install opencv-camcalib
           pip install toml
           pip install pytest
           pip install pytest-cov
