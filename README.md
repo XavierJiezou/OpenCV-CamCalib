@@ -130,16 +130,24 @@ opencv-camcalib undistort --data_dir="/path/to/data"
 
 ## 构建
 
-- 命令界面
+### 命令界面
 
 ```bash
 poetry build
 ```
 
-- 图像界面
+### 图像界面
+
+- Windows
 
 ```bash
-pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico -n opencv-camcalib-0.1.1
+pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images"
+```
+
+- macOS | Linux
+
+```bash
+pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico:images"
 ```
 
 ## 文档
