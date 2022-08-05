@@ -78,7 +78,7 @@ jobs:
 
       - name: Build
         run: |
-          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images"
+          pyinstaller -w -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico:images"
           create-dmg \
             --volname app \
             --volicon images/favicon_256x256.ico \
