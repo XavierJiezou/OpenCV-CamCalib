@@ -91,9 +91,9 @@ pip install opencv-camcalib
 
 ### 图像界面
 
-```bash
-pip install opencv-camcalib
-```
+- [Windows](https://github.com/XavierJiezou/OpenCV-CamCalib/releases/download/0.1.1/opencv-camcalib-0.1.1.exe)
+- [macOS](https://github.com/XavierJiezou/OpenCV-CamCalib/releases/download/0.1.1/opencv-camcalib-0.1.1.dmg)
+- [Linux](https://github.com/XavierJiezou/OpenCV-CamCalib/releases/download/0.1.1/opencv-camcalib-0.1.1.AppImage)
 
 ## 用法
 
