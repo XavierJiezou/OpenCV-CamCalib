@@ -149,8 +149,8 @@ jobs:
       - name: Delete AppImage
         run: rm dist/*.AppImage
 
-      # - name: Publish to PyPI
-      #   uses: ortega2247/pypi-upload-action@master
-      #   with:
-      #     user: XavierJiezou
-      #     password: ${{ secrets.PYPI_PASSWORD }}
+      - name: Publish to PyPI
+        uses: ortega2247/pypi-upload-action@master
+        with:
+          user: XavierJiezou
+          password: ${{ secrets.PYPI_PASSWORD }}
