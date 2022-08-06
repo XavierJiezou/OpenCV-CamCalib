@@ -12,7 +12,7 @@ name = "opencv-camcalib"
 packages = [{include = "opencv_camcalib"}]
 readme = "README.md"
 repository = "https://github.com/XavierJiezou/OpenCV-CamCalib"
-version = "0.1.1"
+version = "0.1.2"
 
 [tool.poetry.dependencies]
 fire = "^0.4.0"
