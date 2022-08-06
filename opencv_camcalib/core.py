@@ -121,7 +121,10 @@ class CamCalibCore:
             return gray
 
         try:
-            gray = func_timeout(5, func)
+            if not draw_pattern:
+                gray = func_timeout(5, func)
+            else:
+                gray = func_timeout(5 + 0.5 * len(os.listdir(data_dir)), func)
         except FunctionTimedOut:
             return {
                 "status": "failure",

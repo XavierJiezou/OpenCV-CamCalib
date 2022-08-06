@@ -44,40 +44,45 @@ class ChessboardCalibration(QDialog):
         )
         self.info = info
         QMessageBox.information(self, "标定结果", info["msg"])
-        mtx_str = ""
-        for i in info["data"]["mtx"]:
-            for j in i:
-                mtx_str += f"{j:.2f}\t"
-            mtx_str += "<br>"
-        mtx_str += f"f<sub>x</sub>: {info['data']['mtx'][0][0]:.2f}<br>"
-        mtx_str += f"f<sub>y</sub>: {info['data']['mtx'][1][1]:.2f}<br>"
-        mtx_str += f"c<sub>x</sub>: {info['data']['mtx'][0][2]:.2f}<br>"
-        mtx_str += f"c<sub>y</sub>: {info['data']['mtx'][1][2]:.2f}<br>"
-        self.ui.textBrowser.setText(mtx_str)
-        dist_str = ""
-        for k, v in zip(
-            [
-                "k<sub>1</sub>",
-                "k<sub>2</sub>",
-                "p<sub>1</sub>",
-                "p<sub>2</sub>",
-                "k<sub>3</sub>",
-            ],
-            info["data"]["dist"][0],
-        ):
-            dist_str += f"{k}: {v:.4f}<br>"
-        self.ui.textBrowser_2.setText(dist_str)
-        rvecs_str = "R: \n"
-        for i in info["data"]["rvecs"]:
-            tmp = ", ".join([f"{j[0]:.4f}" for j in i])
-            rvecs_str += f"[{tmp}]\n"
-        tvecs_str = "T: \n"
-        for i in info["data"]["tvecs"]:
-            tmp = ", ".join([f"{j[0]:.4f}" for j in i])
-            tvecs_str += f"[{tmp}]\n"
-        self.ui.textBrowser_3.setText(rvecs_str + tvecs_str)
-        error_str = f"RMS: {info['data']['rms']:.4f}\nMSE: {info['data']['mse']:.4f}"
-        self.ui.textBrowser_4.setText(error_str)
+        if info["status"] == "success":
+            mtx_str = ""
+            for i in info["data"]["mtx"]:
+                for j in i:
+                    mtx_str += f"{j:.2f}\t"
+                mtx_str += "<br>"
+            mtx_str += f"f<sub>x</sub>: {info['data']['mtx'][0][0]:.2f}<br>"
+            mtx_str += f"f<sub>y</sub>: {info['data']['mtx'][1][1]:.2f}<br>"
+            mtx_str += f"c<sub>x</sub>: {info['data']['mtx'][0][2]:.2f}<br>"
+            mtx_str += f"c<sub>y</sub>: {info['data']['mtx'][1][2]:.2f}<br>"
+            self.ui.textBrowser.setText(mtx_str)
+            dist_str = ""
+            for k, v in zip(
+                [
+                    "k<sub>1</sub>",
+                    "k<sub>2</sub>",
+                    "p<sub>1</sub>",
+                    "p<sub>2</sub>",
+                    "k<sub>3</sub>",
+                ],
+                info["data"]["dist"][0],
+            ):
+                dist_str += f"{k}: {v:.4f}<br>"
+            self.ui.textBrowser_2.setText(dist_str)
+            rvecs_str = "R: \n"
+            for i in info["data"]["rvecs"]:
+                tmp = ", ".join([f"{j[0]:.4f}" for j in i])
+                rvecs_str += f"[{tmp}]\n"
+            tvecs_str = "T: \n"
+            for i in info["data"]["tvecs"]:
+                tmp = ", ".join([f"{j[0]:.4f}" for j in i])
+                tvecs_str += f"[{tmp}]\n"
+            self.ui.textBrowser_3.setText(rvecs_str + tvecs_str)
+            error_str = (
+                f"RMS: {info['data']['rms']:.4f}\nMSE: {info['data']['mse']:.4f}"
+            )
+            self.ui.textBrowser_4.setText(error_str)
+        else:
+            pass
 
     @Slot()
     def on_pushButton_2_clicked(self) -> None:
