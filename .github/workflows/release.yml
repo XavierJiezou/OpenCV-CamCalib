@@ -2,9 +2,8 @@ name: Release
 
 on:
   push:
-    branch: main
-    # tags:
-    #   - "*.*.*"
+    tags:
+      - "*.*.*"
   # pull_request:
   #   tags:
   #     - "*.*.*"
@@ -37,7 +36,7 @@ jobs:
         run: pip install pyinstaller
 
       - name: Build
-        run: pyinstaller -wF opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images" -n opencv-camcalib-$(poetry version --short)
+        run: pyinstaller -F opencv_camcalib/app.py -i images/favicon_256x256.ico --add-data "images/favicon_256x256.ico;images" -n opencv-camcalib-$(poetry version --short)
 
       - name: Create Release
         uses: ncipollo/release-action@v1
