@@ -155,7 +155,6 @@ class SimpleVideoPlayer(QMainWindow):
     @Slot()
     def on_shot_button_clicked(self) -> None:
         save_dir = self.screenshot_setting_dialog.ui.lineEdit.text()
-        print(save_dir)
         if self.screenshot_setting_dialog.ui.radioButton.isChecked():
             save_format = "bmp"
         elif self.screenshot_setting_dialog.ui.radioButton_2.isChecked():

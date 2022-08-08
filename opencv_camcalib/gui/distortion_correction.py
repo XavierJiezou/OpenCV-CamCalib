@@ -50,6 +50,7 @@ class DistortionCorrection(QDialog):
     @Slot()
     def on_pushButton_2_clicked(self) -> None:
         save_dir = QFileDialog().getExistingDirectory(self, "保存位置")
+        print(save_dir)
         for k, v in track(self.data.items(), description="Writing..."):
             cv.imwrite(os.path.join(save_dir, k), v)
         QMessageBox.information(self, "保存成功", f"共保存完成{len(self.data)}张纠正的图像")

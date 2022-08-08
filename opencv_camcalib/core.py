@@ -8,7 +8,6 @@ import cv2 as cv
 import numpy as np
 from func_timeout import FunctionTimedOut, func_timeout
 from rich import print as rich_print
-from rich.progress import track
 
 from opencv_camcalib import __version__
 
@@ -97,7 +96,7 @@ class CamCalibCore:
         not_found = []
 
         def func() -> Any:
-            for fname in track(os.listdir(data_dir), description="Calibrating..."):
+            for fname in os.listdir(data_dir):
                 img = cv.imread(os.path.join(data_dir, fname))
                 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
                 if pattern_type == "chessboard":
@@ -183,7 +182,7 @@ class CamCalibCore:
             mtx, dist, None, newcameramtx, (w, h), 5
         )
         undistorted = {}
-        for fname in track(os.listdir(data_dir), description="Undistorting..."):
+        for fname in os.listdir(data_dir):
             img = cv.imread(os.path.join(os.path.join(data_dir, fname)))
             dst = cv.remap(img, mapx, mapy, cv.INTER_LINEAR)
             if crop_edge:
