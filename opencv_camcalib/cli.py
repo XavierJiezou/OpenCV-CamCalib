@@ -66,6 +66,7 @@ class CamCalibCLI:
             alpha,
             crop_edge,
         )
+        os.makedirs(save_dir, exist_ok=True)
         for k, v in track(ret["data"].items(), description="Writing..."):
             cv.imwrite(os.path.join(save_dir, k), v)
         return self.console.print(ret)
