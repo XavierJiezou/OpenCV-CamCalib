@@ -886,7 +886,7 @@ reference = "tsinghua-pypi"
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -1003,7 +1003,7 @@ reference = "tsinghua-pypi"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.7.2, <3.11"
-content-hash = "1481692c5489c5aa6729dc153adb92575c247bd524a94261a8a96c95017160ad"
+content-hash = "f43fe6915fc6e3646fd8c4a7ccffce4f7351fb98632e7027fb7fdb33c89840f4"
 
 [metadata.files]
 altgraph = [

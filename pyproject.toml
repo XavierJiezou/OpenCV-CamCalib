@@ -20,17 +20,17 @@ func-timeout = "^4.3.5"
 opencv-python = "<=4.5.5.64"
 python = ">=3.7.2, <3.11"
 rich = "^12.5.1"
-toml = "^0.10.2"
 
 [tool.poetry.dev-dependencies]
-pyside6 = "^6.3.1"
 black = "^22.6.0"
 flake8 = "^4.0.1"
 pre-commit = "^2.20.0"
 pyinstaller = "^5.2"
 pylint = "^2.14.5"
+pyside6 = "^6.3.1"
 pytest = "^7.1.2"
 pytest-cov = "^3.0.0"
+toml = "^0.10.2"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
