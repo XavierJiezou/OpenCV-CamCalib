@@ -3,6 +3,7 @@ import sys
 import time
 
 import cv2
+import toml
 from PySide6.QtCore import Qt, QTimer, Slot
 from PySide6.QtGui import QIcon, QImage, QPixmap
 from PySide6.QtWidgets import QApplication, QInputDialog, QMainWindow, QMessageBox
@@ -76,7 +77,7 @@ class SimpleVideoPlayer(QMainWindow):
         QMessageBox.about(
             self,
             "关于我们",
-            "Version 0.1.2",
+            f'Version {toml.load("pyproject.toml")["tool"]["poetry"]["version"]}',
         )
 
     @Slot()
