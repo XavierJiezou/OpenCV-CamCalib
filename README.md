@@ -70,9 +70,9 @@
 
 ## 演示
 
-> 测试相机 RTSP 地址：[rtsp://admin:a12345678@y52t229909.zicp.vip](rtsp://admin:a12345678@y52t229909.zicp.vip)
+> 系统内置相机地址默认为 0
 
-![demo](https://raw.githubusercontent.com/XavierJiezou/OpenCV-CamCalib/main/images/demo.png)
+![demo](https://cdn.delivr.net/gh/XavierJiezou/OpenCV-CamCalib@main/images/demo_compressed.gif)
 
 ## 功能
 
