@@ -107,7 +107,7 @@ pip install opencv-camcalib
 - 数据采集
 
 ```bash
-opencv-camcalib capture rtsp://admin:a12345678@y52t229909.zicp.vip
+opencv-camcalib capture 0
 ```
 
 - 棋盘标定
