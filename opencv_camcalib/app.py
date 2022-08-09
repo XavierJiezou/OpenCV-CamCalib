@@ -84,13 +84,14 @@ class SimpleVideoPlayer(QMainWindow):
         if self.status:
             ret, frame = self.cap.read()
             if ret:
-                self.frames = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                h, w, _ = self.frames.shape
+                self.frame = frame
+                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+                h, w, _ = frame_rgb.shape
                 image = QImage(
-                    self.frames,
+                    frame_rgb,
                     w,
                     h,
-                    self.frames.strides[0],
+                    frame_rgb.strides[0],
                     QImage.Format_RGB888,
                 )
                 self.ui.image_label.setPixmap(
@@ -125,7 +126,10 @@ class SimpleVideoPlayer(QMainWindow):
 
     @Slot()
     def start_update(self, url: str) -> None:
-        self.cap = cv2.VideoCapture(url)
+        if url in ["0", "1", "2"]:
+            self.cap = cv2.VideoCapture(int(url), cv2.CAP_DSHOW)
+        else:
+            self.cap = cv2.VideoCapture(url)
         if self.cap.isOpened():
             self.ui.url_input.setText(url)
             self.ui.image_label.setText("正在加载视频..")
@@ -163,7 +167,7 @@ class SimpleVideoPlayer(QMainWindow):
             save_format = "jpg"
         save_name = f"{round(time.time())}.{save_format}"
         save_path = os.path.join(save_dir, save_name)
-        cv2.imwrite(save_path, self.frames)
+        cv2.imwrite(save_path, self.frame)
 
     @Slot()
     def on_stop_button_clicked(self) -> None:
