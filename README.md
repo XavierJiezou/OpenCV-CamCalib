@@ -72,7 +72,7 @@
 
 > 系统内置相机地址默认为 0
 
-https://cdn.delivr.net/gh/XavierJiezou/OpenCV-CamCalib@main/images/demo.mp4
+https://user-images.githubusercontent.com/43515350/183587718-9432cc38-0865-432d-b17d-cf9f234137e7.mp4
 
 ## 功能
 
