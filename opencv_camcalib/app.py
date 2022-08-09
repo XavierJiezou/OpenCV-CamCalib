@@ -127,7 +127,7 @@ class SimpleVideoPlayer(QMainWindow):
     @Slot()
     def start_update(self, url: str) -> None:
         if url in ["0", "1", "2"]:
-            self.cap = cv2.VideoCapture(int(url), cv2.CAP_DSHOW)
+            self.cap = cv2.VideoCapture(int(url))
         else:
             self.cap = cv2.VideoCapture(url)
         if self.cap.isOpened():
